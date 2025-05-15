@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kingdom Warfare - I. Prologue</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+:root {
+  --unit-size: 64px;
+  --player-color: -328px;
+}
+.game-board { background: url('map/map1.png'), radial-gradient(at top left, #6cc97a, #a9dd85, #bbe2a3, #7ac94c); }
+    </style>
+    <link href="gameplay.css" rel="stylesheet" media="all"/>
+</head>
+<body><header>Kingdom Warfare - I. Prologue</header>
+<div id="unit_csv" style="display:none;">Name,mov,skl,str,def,atk,wnd,spe,type,x,y,team
+Knight           ,2,3,3,4,7,10,1,1,3,7,0
+Raider           ,3,3,2,3,8, 9,0,0,2,7,0
+Zombie 1         ,2,2,2,3,5, 5,0,4,0,1,1
+Zombie 2         ,2,2,2,3,5, 5,0,4,3,0,1
+Zombie 3         ,2,2,2,3,5, 5,0,4,2,0,1
+Zombie 4         ,2,2,2,3,5, 5,0,4,5,1,1</div>
+<div id="obst_csv" style="display:none;">1,1 2,1 2,2 3,2 2,5 3,5 3,6 4,6</div>
+<div id="questContainer">
+    <div id="questHeader"><span>📜 I. Prologue</span><button onclick="toggleQuest()">Got it!</button></div>
+    <div id="questText"><p>The kingdom of Núrenor is under attack! Necromantic zombies have invaded the village... Defeat them!</p></div>
+</div>
+    <div class="gameplay"><div class="game-board"></div>
+    <div id="info-panel"></div></div>
+    <div class="center"><button id="end-turn">End Turn</button></div>
+    <div id="unit_stats"></div>
+    <div id="results" class="units-container"></div>
+    <div class="center"><button id="clean-log" onclick="cleanLog();">Clean Logs</button> <button id="toggle-q" onclick="toggleQuest()">Toggle Quest Info</button></div>
+<footer><p>SiteRaw.com Games.</p><p><a href="https://www.siteraw.com/kingdom">Kingdom Warfare</a> | <a href="https://www.siteraw.com">SiteRaw</a> | <a href="https://www.siteraw.com/projects">Projects</a> | <a href="https://www.siteraw.com/tutorials">Tutorials</a></p></footer>
+	<script>const gameBoard = document.querySelector('.game-board');
+        const resultsDiv = document.getElementById('results');
+        let currentTurn = 'player';
+        let selectedUnit = null;
+        let gameTurn = 1;
+        let gameLvl = 1;
+        let maxLvl = 6;</script>
+	<script src="js/units.js"></script><script src="js/game.js"></script><script src="js/ai.js"></script><script src="js/quest.js"></script>
+    <script>placeUnits();</script>
+</body>
+</html>
