@@ -1,13 +1,13 @@
 # SiteRaw Kingdom Warfare
 
-Kingdom Warfare is a strategy based RPG web game by SiteRaw.
+Kingdom Warfare is a strategy based RPG web game by SiteRaw. Play here: https://www.siteraw.com/kingdom
 
 ## Units
 
-- Knight
-- Raider
-- Marauder
-- Warlord
+- Knight   (high skill)
+- Raider   (high movement)
+- Marauder (high damage)
+- Warlord  (high everything)
 
 ### Enemy Units
 
@@ -16,7 +16,9 @@ Kingdom Warfare is a strategy based RPG web game by SiteRaw.
 - Lancer
 - Necromancer
 - General
+- Mercenary (NEW)
 
 ## Links
 
 - https://www.siteraw.com/
+- https://www.siteraw.com/kingdom (play for free)
