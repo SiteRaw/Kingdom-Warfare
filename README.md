@@ -17,6 +17,7 @@ Kingdom Warfare is a strategy based RPG web game by SiteRaw. Play here: https://
 - Necromancer
 - General
 - Mercenary (NEW)
+- Soldier (NEW)
 
 ## Links
 
